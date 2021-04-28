@@ -1,0 +1,123 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font: poppins;
+}
+
+#main {
+  width:  100%;
+  height: 50vh;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightblue;
+  box-shadow: 5px 10px 30px rgba(61, 58, 255, 0.616);
+  z-index: 1;
+}
+
+.logo img{
+  height: 45px;
+}
+
+.menu{
+  list-style: none;
+  display: flex;
+}
+
+.menu li a{
+  height: 40px;
+  line-height: 43px;
+  margin: 3px;
+  padding: 0px 20px;
+  display: flex;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 1000;
+  letter-spacing: 5px;
+  color: darkblue;
+}
+
+a{
+  text-decoration: none;
+}
+
+.hey{
+  color: rgb(10, 7, 255);
+  font-weight: 500;
+  font-size: 1.4em;
+  border-bottom: 2px solid rgb(10, 7, 255);
+}
+
+.image{
+  width: 500px;
+  height: 500px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.content{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%,-50%) ;
+  background-color: rgba(34, 131, 241, 0.884);
+}
+
+.main-text{
+  width: 500px;
+}
+
+.main-text h1{
+  font-size: 2.5em;
+  color: black;
+  margin: 0px 0px 10px 0px;
+  line-height: 60px;
+}
+
+.main-text p {
+  color: rgb(34, 34, 151);
+  font-size: 1.5em;
+}
+
+.portfolio {
+  width: 190px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(6, 6, 54);
+  color: lightskyblue;
+  border-radius: 22px;
+  box-shadow: 5px 10px 30px;
+}
+
+.portfolio:hover {
+  background-color: rgb(15, 15, 124);
+  transition: all ease 0.3s
+}
+
+.menu li a:hover{
+  background-color: rgb(136, 219, 247);
+  color: darkblue;
+  box-shadow: 5px 10px 30px rgba(61, 58, 255, 0.616);;
+  transition: 0.3s;
+}
